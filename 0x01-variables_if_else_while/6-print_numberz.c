@@ -1,18 +1,20 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Print the alphabet in reverse order in lowercase.
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
  * Return: 0
  */
 int main(void)
 {
-	char c;
+	int c = 0;
 
-	for (c = 'z'; c >= 'a'; c--)
+	while (c < 10)
 	{
-		putchar(c);
+		putchar(48 + c);
+		c++;
 	}
-	putchar('\n');
 
+	putchar('\n');
 	return (0);
 }
